@@ -1,18 +1,26 @@
-export default function Footer() {
-  return (
-        <footer className='bg-white w-[100vw] h-[50vh]'>
-          <div className='p-5 bg-orange-500 w[80vw] m-5 flex flex-col'>
-            <div className='flex justify-between items-center'>
-              <img src="./src/assets/image/flechaIzq.png"className=' h-[2rem]'/>
-              <img src="./src/assets/image/nami.png" alt="nami" className='w-[7rem] h-[9rem] object-contain'/>
-              <img src="./src/assets/image/portada.png" alt="portada one piece" className='h-[8rem] object-contain'/>
-              <img src="./src/assets/image/flechaIzq.png"className='rotate-180 h-[2rem]'/>
+import Button from "./Button"
+
+export default function Footer(){
+    return(
+        <footer className='flex flex-col justify-between items-center'>
+            <img src="./src/assets/image/backgroundFooter.png" className="object-contain rounded-t-none rounded-b-full"/>
+            <div className="flex flex-col items-center  sm:flex-row sm:justify-between">
+                <p>Home</p>
+                <p>Mangas</p>
+                <img src="./src/assets/image/LogoDos.png"/>
+                <div className="flex-col">
+                    <div className="flex justify-between h-[1rem] m-5">
+                        <img src="./src/assets/image/facebook-black.png" alt="logo media"/>
+                        <img src="./src/assets/image/twitter-black.png" alt="logo media"/>
+                        <img src="./src/assets/image/vimeo-black.png" alt="logo media"/>
+                        <img src="./src/assets/image/youtube-black.png" alt="logo media"/>
+                    </div>
+                    <div className="flex justify-center">
+                    <Button title= "Donate"/>
+                    </div>
+                </div>
             </div>
-            <div>
-              <h2 className='text-white text-center font-semibold'>Shonen</h2>
-              <p className='text-white text-center'>Is the manga that is aimed at adolecescent boys. They are series with large amounts of acton, in which humorous situations often occur. The camaraderie between members of a collective or a combat teams stands out.</p>
-            </div>
-          </div>
+            <hr />
         </footer>
-  )
+    )
 }
